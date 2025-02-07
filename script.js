@@ -200,39 +200,24 @@
 //     div1.innerHTML = "Это новый div!";
 //     document.body.append(div1);
 // }
-
-let but1 = document.createElement("button");
-let but2 = document.createElement("button");
-document.body.append(but1);
-document.body.append(but2);
-but1.innerHTML = "Knopka Nomer 1";
-but2.innerHTML = "Knopka Nomer 2";
-but1.addEventListener("click", func1);
-but2.addEventListener("click", func2);
+// let a = document.querySelector("img");
+// a.style.width = "100vw";
+// a.style.height = "90vh";
+// function func1() {
+//     let div1 = document.createElement("div");
+//     div1.style.width = "100vw";
+//     div1.style.height = "100vh";
+//     div1.style.opacity = "2.5 black";
+//     document.body.append(div1);
+//     div1.style.zIndex = "20";
+// }
+let div1 = document.getElementById("modalW")
 function func1() {
-    window.open('http://google.com', 'my-google');
+    div1.style.display = "flex";
 }
-function func2() {
-    window.close();
+function func2(params) {
+    div1.style.display = "none";
 }
-
-
-let console1 = window.innerWidth;
-let console2 = window.innerHeight;
-console.log(console1);
-console.log(console2);
-
-let but3 = document.createElement("button");
-document.body.append(but3);
-but3.innerHTML = "Knopka Nomer 3";
-but3.addEventListener("click", func3);
-function func3() {
-    window.open();
-    window.resizeTo(300, 300);
+function func3(params) {
+    window.open("https://fontawesome.com/")
 }
-
-function func4() {
-    window.open();
-    window.resizeTo(300, 300);
-}
-setTimeout(func4, 2000)

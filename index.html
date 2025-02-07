@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./input.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <!-- <h1 class="h1">Hello, DOM</h1>
-    <p class="p1">Какой-то текст...</p>
-    <button onclick="func1()">Изменить текст</button> -->
+    <button onclick="func1()">Click</button>
+    <div class="parent">
+        <img src="./Без названия (1).jpeg" alt="">
+        <div id="modalW">
+             <div id="modalDIV">
+                <button class="b2" onclick="func2()">X</button>
+                <center>
+                    <h1>Registration</h1><br>
+                    <input value="Your Name" type="text"><br> <br>
+                    <input value="Your Surname" type="text"><br> <br>
+                    <input value="Your Email" type="email"> <br><br>
+                    <input value="Your Password" type="text"><br> <br>
+                    <button class="b1" onclick="func3()">Confirm</button>
+                </center>
+             </div>
+        </div>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
