@@ -211,13 +211,38 @@
 //     document.body.append(div1);
 //     div1.style.zIndex = "20";
 // }
-let div1 = document.getElementById("modalW")
-function func1() {
-    div1.style.display = "flex";
-}
-function func2(params) {
-    div1.style.display = "none";
-}
-function func3(params) {
-    window.open("https://fontawesome.com/")
-}
+let inp1 = document.getElementById("inp1");
+let inp2 = document.getElementById("inp2");
+let inp3 = document.getElementById("inp3");
+
+let p1 = document.getElementById("info1");
+let p2 = document.getElementById("info2");
+let p3 = document.getElementById("info3");
+let inp4 = inp2.value;
+inp1.addEventListener("input", ()=>{
+    if (inp1.value.length <= 8) {
+        p1.innerHTML = "Inncorect";
+        p1.style.color = "red";
+    } else {
+        p1.innerHTML = "Correct";
+        p1.style.color = "green";
+    }
+})
+inp2.addEventListener("input", ()=>{
+    if (inp2.value.length <= 8) {
+        p2.innerHTML = "Inncorect";
+        p2.style.color = "red";
+    } else {
+        p2.innerHTML = "Correct";
+        p2.style.color = "green";
+    }
+})
+inp3.addEventListener("input", ()=>{
+    if (inp3.value = inp2.value) {
+        p3.innerHTML = "Correct";
+        p3.style.color = "green";
+    } else {
+        p3.innerHTML = "Incorrect";
+        p3.style.color = "red";
+    }
+})

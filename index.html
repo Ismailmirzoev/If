@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./input.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <button onclick="func1()">Click</button>
-    <div class="parent">
-        <img src="./Без названия (1).jpeg" alt="">
-        <div id="modalW">
-             <div id="modalDIV">
-                <button class="b2" onclick="func2()">X</button>
-                <center>
-                    <h1>Registration</h1><br>
-                    <input value="Your Name" type="text"><br> <br>
-                    <input value="Your Surname" type="text"><br> <br>
-                    <input value="Your Email" type="email"> <br><br>
-                    <input value="Your Password" type="text"><br> <br>
-                    <button class="b1" onclick="func3()">Confirm</button>
-                </center>
-             </div>
-        </div>
-    </div>
+    <form action="">
+        <label for="">Введите Ваше Имя</label>
+        <input type="text" id="inp1">
+        <p id="info1"></p>
+
+
+        <label for="">Введите Ваш Пароль</label>
+        <input type="password" id="inp2">
+        <p id="info2"></p>
+
+
+        <label for="">Потвердите Ваш Пароль</label>
+        <input type="password" id="inp3">
+        <p id="info3"></p>
+    </form>
 <script src="script.js"></script>
 </body>
 </html>
