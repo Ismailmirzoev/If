@@ -211,38 +211,36 @@
 //     document.body.append(div1);
 //     div1.style.zIndex = "20";
 // }
-let inp1 = document.getElementById("inp1");
-let inp2 = document.getElementById("inp2");
-let inp3 = document.getElementById("inp3");
 
-let p1 = document.getElementById("info1");
-let p2 = document.getElementById("info2");
-let p3 = document.getElementById("info3");
-let inp4 = inp2.value;
-inp1.addEventListener("input", ()=>{
-    if (inp1.value.length <= 8) {
-        p1.innerHTML = "Inncorect";
+let inp1 = document.getElementById("name");
+let inp2 = document.getElementById("surname");
+let reg = document.getElementsByClassName("registerbtn")[0];
+
+let p1 = document.getElementById("b1");
+let p2 = document.getElementById("b2");
+
+inp1.addEventListener("input", func1);
+inp2.addEventListener("input", func2);
+
+function func1() {
+    if (inp1.value.length <= 2) {
+        p1.innerHTML = "Введите заново(Букв Дожно Быть Не Меньше 2)";
         p1.style.color = "red";
     } else {
-        p1.innerHTML = "Correct";
+        p1.innerHTML = "Отлично!";
         p1.style.color = "green";
     }
-})
-inp2.addEventListener("input", ()=>{
-    if (inp2.value.length <= 8) {
-        p2.innerHTML = "Inncorect";
+}
+function func2() {
+    if (inp2.value.length <= 2) {
+        p2.innerHTML = "Введите заново(Букв Дожно Быть Не Меньше 2)";
         p2.style.color = "red";
     } else {
-        p2.innerHTML = "Correct";
+        p2.innerHTML = "Отлично!";
         p2.style.color = "green";
     }
-})
-inp3.addEventListener("input", ()=>{
-    if (inp3.value = inp2.value) {
-        p3.innerHTML = "Correct";
-        p3.style.color = "green";
-    } else {
-        p3.innerHTML = "Incorrect";
-        p3.style.color = "red";
-    }
-})
+}
+function func7() {
+    localStorage.setItem("Name", inp1.value);
+    localStorage.setItem("Surname", inp2.value);
+}

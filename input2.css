@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div1 {
+    background: url(./id-komsomolskaya-pravda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#h1 {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+#p1 {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.child1 {
+    margin-top: 30px;
+    margin-left: 30vw;
+    position: absolute;
+    font-size: 40px;
+}
+.child2 {
+    position: absolute;
+    top: 900px;
+    left: 400px;
+    background-color: red;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.pp {
+    font-size: 30px;
+    color: white;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
